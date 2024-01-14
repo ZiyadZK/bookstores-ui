@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav class="w-full flex justify-between items-center px-20 h-16 font-quicksand text-zinc-900">
+        <h1 class="font-bold font-nunito text-2xl">
+            Book<span class="font-medium font-quicksand underline decoration-4 decoration-blue-500">Sto</span><span class="font-medium font-quicksand underline decoration-4 decoration-orange-500">res</span><span class="text-red-400">.</span>
+        </h1>
+        <div class="flex flex-row-reverse gap-5 items-center">
+            <h1 class="">
+                Hi, <b>Ziyad</b>
+            </h1>
+            <img class="w-10" src="https://cdn-icons-png.flaticon.com/128/4140/4140048.png?ga=GA1.1.1610299679.1689303514&semt=ais" alt="">
+            <button class="w-10 h-10 rounded-full bg-zinc-200 flex items-center justify-center hover:bg-zinc-300">
+                <img class="w-5" src="https://cdn-icons-png.flaticon.com/128/1827/1827312.png?ga=GA1.1.1610299679.1689303514&semt=ais" alt="">
+            </button>
+            <button class="w-10 h-10 rounded-full bg-zinc-200 flex items-center justify-center hover:bg-zinc-300 group">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 text-blue-500 group-hover:text-blue-700" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+            </button>
+        </div>
+    </nav>
+    <div class="px-20 grid grid-cols-5 gap-5 w-full">
+        <div class="w-full bg-zinc-100 rounded-lg p-5 h-fit">
+            <h1 class="font-bold font-nunito text-zinc-700">
+                Genre
+            </h1>
+            <hr class="w-full my-2">
+            <a href="" class="rounded-lg font-quicksand tracking-tighter">
+                <h1 class="w-full hover:bg-zinc-200 py-2 px-1 rounded-lg transition-all duration-300">
+                    Action
+                </h1>
+            </a>
+            <a href="" class="rounded-lg font-quicksand tracking-tighter">
+                <h1 class="w-full hover:bg-zinc-200 py-2 px-1 rounded-lg transition-all duration-300">
+                    Drama
+                </h1>
+            </a>
+            <a href="" class="rounded-lg font-quicksand tracking-tighter">
+                <h1 class="w-full hover:bg-zinc-200 py-2 px-1 rounded-lg transition-all duration-300">
+                    Romance
+                </h1>
+            </a>
+            <a href="" class="rounded-lg font-quicksand tracking-tighter">
+                <h1 class="w-full hover:bg-zinc-200 py-2 px-1 rounded-lg transition-all duration-300">
+                    Slice of Life
+                </h1>
+            </a>
+            <a href="" class="rounded-lg font-quicksand tracking-tighter">
+                <h1 class="w-full hover:bg-zinc-200 py-2 px-1 rounded-lg transition-all duration-300">
+                    Horror
+                </h1>
+            </a>
+            <a href="" class="rounded-lg font-quicksand tracking-tighter">
+                <h1 class="w-full hover:bg-zinc-200 py-2 px-1 rounded-lg transition-all duration-300">
+                    Thriller
+                </h1>
+            </a>
+        </div>
+        <div class="w-full col-span-4">
+            <form class="flex items-center w-full gap-5">
+                <div class="relative w-1/2">
+                    <input type="text" required autocomplete="off" class="peer h-10 px-5 rounded-lg border outline-none w-full font-nunito focus:bg-blue-50/50 focus:border-blue-200 transition-all duration-300 hover:border-blue-200" placeholder="Search your book here">
+                    <button type="submit" class="absolute top-0 right-0 w-10 h-10 flex items-center justify-center peer-placeholder-shown:text-zinc-700 text-blue-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="text-inherit w-4 transition-all duration-300" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                    </button>
+                </div>
+                <select name="" id="" class="flex items-center outline-none border px-2 h-10 font-nunito rounded-lg cursor-pointer focus:bg-blue-50/50 transition-all duration-300">
+                    <option value="">Name</option>
+                    <option value="">Author</option>
+                </select>
+            </form>
+            <hr class="my-1 opacity-0">
+            <div class="grid grid-cols-2 gap-5 overflow-auto relative h-[520px]">
+                <div class="w-full flex items-center rounded-lg border hover:shadow-xl transition-all duration-300 h-80 overflow-hidden">
+                    <img class="w-1/2 object-cover object-center" src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p8329406_p_v8_ad.jpg" alt="">
+                    <div class="w-1/2 flex flex-col justify-between p-5 h-full">
+                        <article>
+                            <p class="text-xs font-quicksand tracking-tighter">
+                                Creator Here
+                            </p>
+                            <h1 class="font-nunito font-bold text-zinc-700 text-xl">
+                                I am Number Four
+                            </h1>
+                            <p class="mt-2 font-quicksand text-sm tracking-tighter">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam vitae in consequuntur omnis 
+                            </p>
+                        </article>
+                        <article class="">
+                            <p class="font-quicksand text-lg tracking-tighter text-green-700">
+                                $ 3.75
+                            </p>
+                            <hr class="my-1 opacity-0">
+                            <div class="flex gap-2 items-center">
+                                <a href="" class="px-3 py-2 rounded-full font-nunito font-medium bg-zinc-800 text-white hover:bg-zinc-900">
+                                    Add to Cart
+                                </a>
+                                <a href="" class="flex items-center justify-center border rounded-full w-10 h-10 hover:border-rose-400 hover:bg-rose-50 transitionall duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-5 text-rose-500" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="w-full flex items-center rounded-lg border hover:shadow-xl transition-all duration-300 h-80 overflow-hidden">
+                    <img class="w-1/2 object-cover object-center" src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p8329406_p_v8_ad.jpg" alt="">
+                    <div class="w-1/2 flex flex-col justify-between p-5 h-full">
+                        <article>
+                            <p class="text-xs font-quicksand tracking-tighter">
+                                Creator Here
+                            </p>
+                            <h1 class="font-nunito font-bold text-zinc-700 text-xl">
+                                I am Number Four
+                            </h1>
+                            <p class="mt-2 font-quicksand text-sm tracking-tighter">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam vitae in consequuntur omnis 
+                            </p>
+                        </article>
+                        <article class="">
+                            <p class="font-quicksand text-lg tracking-tighter text-green-700">
+                                $ 3.75
+                            </p>
+                            <hr class="my-1 opacity-0">
+                            <div class="flex gap-2 items-center">
+                                <a href="" class="px-3 py-2 rounded-full font-nunito font-medium bg-zinc-800 text-white hover:bg-zinc-900">
+                                    Add to Cart
+                                </a>
+                                <a href="" class="flex items-center justify-center border rounded-full w-10 h-10 hover:border-rose-400 hover:bg-rose-50 transitionall duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-5 text-rose-500" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="w-full flex items-center rounded-lg border hover:shadow-xl transition-all duration-300 h-80 overflow-hidden">
+                    <img class="w-1/2 object-cover object-center" src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p8329406_p_v8_ad.jpg" alt="">
+                    <div class="w-1/2 flex flex-col justify-between p-5 h-full">
+                        <article>
+                            <p class="text-xs font-quicksand tracking-tighter">
+                                Creator Here
+                            </p>
+                            <h1 class="font-nunito font-bold text-zinc-700 text-xl">
+                                I am Number Four
+                            </h1>
+                            <p class="mt-2 font-quicksand text-sm tracking-tighter">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam vitae in consequuntur omnis 
+                            </p>
+                        </article>
+                        <article class="">
+                            <p class="font-quicksand text-lg tracking-tighter text-green-700">
+                                $ 3.75
+                            </p>
+                            <hr class="my-1 opacity-0">
+                            <div class="flex gap-2 items-center">
+                                <a href="" class="px-3 py-2 rounded-full font-nunito font-medium bg-zinc-800 text-white hover:bg-zinc-900">
+                                    Add to Cart
+                                </a>
+                                <a href="" class="flex items-center justify-center border rounded-full w-10 h-10 hover:border-rose-400 hover:bg-rose-50 transitionall duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-5 text-rose-500" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="w-full flex items-center rounded-lg border hover:shadow-xl transition-all duration-300 h-80 overflow-hidden">
+                    <img class="w-1/2 object-cover object-center" src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p8329406_p_v8_ad.jpg" alt="">
+                    <div class="w-1/2 flex flex-col justify-between p-5 h-full">
+                        <article>
+                            <p class="text-xs font-quicksand tracking-tighter">
+                                Creator Here
+                            </p>
+                            <h1 class="font-nunito font-bold text-zinc-700 text-xl">
+                                I am Number Four
+                            </h1>
+                            <p class="mt-2 font-quicksand text-sm tracking-tighter">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam vitae in consequuntur omnis 
+                            </p>
+                        </article>
+                        <article class="">
+                            <p class="font-quicksand text-lg tracking-tighter text-green-700">
+                                $ 3.75
+                            </p>
+                            <hr class="my-1 opacity-0">
+                            <div class="flex gap-2 items-center">
+                                <a href="" class="px-3 py-2 rounded-full font-nunito font-medium bg-zinc-800 text-white hover:bg-zinc-900">
+                                    Add to Cart
+                                </a>
+                                <a href="" class="flex items-center justify-center border rounded-full w-10 h-10 hover:border-rose-400 hover:bg-rose-50 transitionall duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-5 text-rose-500" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="w-full flex items-center rounded-lg border hover:shadow-xl transition-all duration-300 h-80 overflow-hidden">
+                    <img class="w-1/2 object-cover object-center" src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p8329406_p_v8_ad.jpg" alt="">
+                    <div class="w-1/2 flex flex-col justify-between p-5 h-full">
+                        <article>
+                            <p class="text-xs font-quicksand tracking-tighter">
+                                Creator Here
+                            </p>
+                            <h1 class="font-nunito font-bold text-zinc-700 text-xl">
+                                I am Number Four
+                            </h1>
+                            <p class="mt-2 font-quicksand text-sm tracking-tighter">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam vitae in consequuntur omnis 
+                            </p>
+                        </article>
+                        <article class="">
+                            <p class="font-quicksand text-lg tracking-tighter text-green-700">
+                                $ 3.75
+                            </p>
+                            <hr class="my-1 opacity-0">
+                            <div class="flex gap-2 items-center">
+                                <a href="" class="px-3 py-2 rounded-full font-nunito font-medium bg-zinc-800 text-white hover:bg-zinc-900">
+                                    Add to Cart
+                                </a>
+                                <a href="" class="flex items-center justify-center border rounded-full w-10 h-10 hover:border-rose-400 hover:bg-rose-50 transitionall duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-5 text-rose-500" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="w-full flex items-center rounded-lg border hover:shadow-xl transition-all duration-300 h-80 overflow-hidden">
+                    <img class="w-1/2 object-cover object-center" src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p8329406_p_v8_ad.jpg" alt="">
+                    <div class="w-1/2 flex flex-col justify-between p-5 h-full">
+                        <article>
+                            <p class="text-xs font-quicksand tracking-tighter">
+                                Creator Here
+                            </p>
+                            <h1 class="font-nunito font-bold text-zinc-700 text-xl">
+                                I am Number Four
+                            </h1>
+                            <p class="mt-2 font-quicksand text-sm tracking-tighter">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam vitae in consequuntur omnis 
+                            </p>
+                        </article>
+                        <article class="">
+                            <p class="font-quicksand text-lg tracking-tighter text-green-700">
+                                $ 3.75
+                            </p>
+                            <hr class="my-1 opacity-0">
+                            <div class="flex gap-2 items-center">
+                                <a href="" class="px-3 py-2 rounded-full font-nunito font-medium bg-zinc-800 text-white hover:bg-zinc-900">
+                                    Add to Cart
+                                </a>
+                                <a href="" class="flex items-center justify-center border rounded-full w-10 h-10 hover:border-rose-400 hover:bg-rose-50 transitionall duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-5 text-rose-500" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="w-full flex items-center rounded-lg border hover:shadow-xl transition-all duration-300 h-80 overflow-hidden">
+                    <img class="w-1/2 object-cover object-center" src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p8329406_p_v8_ad.jpg" alt="">
+                    <div class="w-1/2 flex flex-col justify-between p-5 h-full">
+                        <article>
+                            <p class="text-xs font-quicksand tracking-tighter">
+                                Creator Here
+                            </p>
+                            <h1 class="font-nunito font-bold text-zinc-700 text-xl">
+                                I am Number Four
+                            </h1>
+                            <p class="mt-2 font-quicksand text-sm tracking-tighter">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam vitae in consequuntur omnis 
+                            </p>
+                        </article>
+                        <article class="">
+                            <p class="font-quicksand text-lg tracking-tighter text-green-700">
+                                $ 3.75
+                            </p>
+                            <hr class="my-1 opacity-0">
+                            <div class="flex gap-2 items-center">
+                                <a href="" class="px-3 py-2 rounded-full font-nunito font-medium bg-zinc-800 text-white hover:bg-zinc-900">
+                                    Add to Cart
+                                </a>
+                                <a href="" class="flex items-center justify-center border rounded-full w-10 h-10 hover:border-rose-400 hover:bg-rose-50 transitionall duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-5 text-rose-500" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="w-full flex items-center rounded-lg border hover:shadow-xl transition-all duration-300 h-80 overflow-hidden">
+                    <img class="w-1/2 object-cover object-center" src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p8329406_p_v8_ad.jpg" alt="">
+                    <div class="w-1/2 flex flex-col justify-between p-5 h-full">
+                        <article>
+                            <p class="text-xs font-quicksand tracking-tighter">
+                                Creator Here
+                            </p>
+                            <h1 class="font-nunito font-bold text-zinc-700 text-xl">
+                                I am Number Four
+                            </h1>
+                            <p class="mt-2 font-quicksand text-sm tracking-tighter">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam vitae in consequuntur omnis 
+                            </p>
+                        </article>
+                        <article class="">
+                            <p class="font-quicksand text-lg tracking-tighter text-green-700">
+                                $ 3.75
+                            </p>
+                            <hr class="my-1 opacity-0">
+                            <div class="flex gap-2 items-center">
+                                <a href="" class="px-3 py-2 rounded-full font-nunito font-medium bg-zinc-800 text-white hover:bg-zinc-900">
+                                    Add to Cart
+                                </a>
+                                <a href="" class="flex items-center justify-center border rounded-full w-10 h-10 hover:border-rose-400 hover:bg-rose-50 transitionall duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-5 text-rose-500" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="w-full flex items-center rounded-lg border hover:shadow-xl transition-all duration-300 h-80 overflow-hidden">
+                    <img class="w-1/2 object-cover object-center" src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p8329406_p_v8_ad.jpg" alt="">
+                    <div class="w-1/2 flex flex-col justify-between p-5 h-full">
+                        <article>
+                            <p class="text-xs font-quicksand tracking-tighter">
+                                Creator Here
+                            </p>
+                            <h1 class="font-nunito font-bold text-zinc-700 text-xl">
+                                I am Number Four
+                            </h1>
+                            <p class="mt-2 font-quicksand text-sm tracking-tighter">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam vitae in consequuntur omnis 
+                            </p>
+                        </article>
+                        <article class="">
+                            <p class="font-quicksand text-lg tracking-tighter text-green-700">
+                                $ 3.75
+                            </p>
+                            <hr class="my-1 opacity-0">
+                            <div class="flex gap-2 items-center">
+                                <a href="" class="px-3 py-2 rounded-full font-nunito font-medium bg-zinc-800 text-white hover:bg-zinc-900">
+                                    Add to Cart
+                                </a>
+                                <a href="" class="flex items-center justify-center border rounded-full w-10 h-10 hover:border-rose-400 hover:bg-rose-50 transitionall duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-5 text-rose-500" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="w-full flex items-center rounded-lg border hover:shadow-xl transition-all duration-300 h-80 overflow-hidden">
+                    <img class="w-1/2 object-cover object-center" src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p8329406_p_v8_ad.jpg" alt="">
+                    <div class="w-1/2 flex flex-col justify-between p-5 h-full">
+                        <article>
+                            <p class="text-xs font-quicksand tracking-tighter">
+                                Creator Here
+                            </p>
+                            <h1 class="font-nunito font-bold text-zinc-700 text-xl">
+                                I am Number Four
+                            </h1>
+                            <p class="mt-2 font-quicksand text-sm tracking-tighter">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam vitae in consequuntur omnis 
+                            </p>
+                        </article>
+                        <article class="">
+                            <p class="font-quicksand text-lg tracking-tighter text-green-700">
+                                $ 3.75
+                            </p>
+                            <hr class="my-1 opacity-0">
+                            <div class="flex gap-2 items-center">
+                                <a href="" class="px-3 py-2 rounded-full font-nunito font-medium bg-zinc-800 text-white hover:bg-zinc-900">
+                                    Add to Cart
+                                </a>
+                                <a href="" class="flex items-center justify-center border rounded-full w-10 h-10 hover:border-rose-400 hover:bg-rose-50 transitionall duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-5 text-rose-500" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
